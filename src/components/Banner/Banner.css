@@ -3,62 +3,118 @@
 }
 .banner_bg_img_sec{
     width: 100%;
-    height: 200px;
-    background-image: url(./../../assets/img/71577e1cf59d802.jpg);
-    /* background-repeat: no-repeat; */
+    background-image: url(./../../assets/img/rs-cover.jpg);
+    height: 515px;
+    background-position: center;
+    background-size: cover;
 }
-
-.slidetext_sec_container{
-    height: 100%;
+.userCard {
+    background-color: var(--white);
+    max-width: 940px;
+    margin: 0 auto;
+    margin-top: -345px;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.3);
 }
-.slidetext_cont{
-    height: 100%;
+.userCard .pictureAndText {
+    padding: 50px;
+    display: flex;
+}
+.userCard .pictureAndText .picture {
+    min-width: 300px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    color: #fff;
 }
-
-.profile_pic{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 10px 0px #0000004a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -100px;
-    background-color: #fff;
+.userCard .pictureAndText .picture img{
+    height: initial;
 }
-.profile_pic img{
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
+.userCard .pictureAndText .text {
+    margin-left: 65px;
+    width: 470px;
 }
-.profile_details_cont{
-    padding: 10px 0px;
+.userCard .pictureAndText .text .profile .welcome {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 4px 16px;
+    line-height: 22px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
 }
-.prof_details_box a{
-    display: flex;
-    align-items: center;
-    color: #212529;
+.userCard .pictureAndText .text .profile .welcome .triangle {
+    position: absolute;
+    width: 0px;
+    border: 10px solid transparent;
+    border-top-width: 0px;
+    border-left-color: var(--red);
+    top: 100%;
+    left: 4px;
+    display: block;
+}
+.userCard .pictureAndText .text .profile h1 {
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--lightBlack);
+    letter-spacing: .1rem;
+}
+.userCard .pictureAndText .text .profile h1 span {
+    font-weight: 300;
+}
+.userCard .pictureAndText .text .profile p {
+    color: var(--lightBlack);
+    font-size: 18px;
+}
+.userCard .pictureAndText .text .profile hr {
+    margin: 20px 0;
+}
+.userCard .pictureAndText .text .profile dl dt, main#siteAbout .userCard .pictureAndText .text .profile dl dd {
+    float: left;
+    padding: 5px 0;
+}
+.userCard .pictureAndText .text .profile dl dt {
+    width: 30%;
+    font-weight: bold;
+    color: var(--normalBlacl);
+    font-size: 13px;
+}
+.userCard .pictureAndText .text .profile dl dd a,
+.userCard .pictureAndText .text .profile dl dd a:hover,
+.userCard .pictureAndText .text .profile dl dd a:focus,
+.userCard .pictureAndText .text .profile dl dd a:active{
+    color: var(--lightBlack);
     text-decoration: none;
+    outline: none;
 }
-.prof_details_box span:first-child{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-color: #00000038;
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.userCard footer.media {
+    background-color: var(--red);
+    text-align: center;
+}
+.userCard footer.media a {
+    display: inline-block;
+    width: 40px;
+    line-height: 30px;
+    padding: 5px 0;
     border-radius: 50%;
-    padding: 5px;
-    margin-right: 5px;
+    margin: 16px;
 }
-.prof_details_box span:first-child i{
-    font-size: 12px;
+.userCard footer.media a i {
+    vertical-align: middle;
+    color: var(--white);
 }
-.prof_details_box span:last-child{
-    font-size: 12px;
+
+
+
+.userSubCard{
+    background-color: var(--black);
+}
+
+.text_typing_cont{
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
 }

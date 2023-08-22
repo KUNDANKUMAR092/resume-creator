@@ -1,0 +1,67 @@
+.header_main_container{
+    padding: 20px 0;
+    transition: all 0.5s;
+}
+
+.header_main_container .logo,
+.header_main_container .logo:hover,
+.header_main_container .logo:active,
+.header_main_container .logo:focus {
+    font-family: 'Fredoka One', cursive;
+    font-size: 24px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+}
+
+.header_main_container .logo .rs {
+    color: var(--orange);
+    margin-right: 4px;
+}
+
+.header_main_container .logo .ca {
+    color: var(--lightGrey);
+}
+
+.header_main_container.navbar-expand-lg .navbar-nav .nav-link{
+    color: var(--transparentBlack);
+    margin: 0px 17px;
+    padding: 5px 0px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+.header_main_container .navbar-nav .nav-link.active, 
+.header_main_container .navbar-nav .nav-link.show{
+    color: var(--transparentBlack);
+}
+
+.header_main_container .nav-link::after {
+    content: '';
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background: var(--orange);
+    height: 3px;
+    width: 100%;
+    animation: underlineSlide 0.3s;
+    visibility: hidden;
+}
+.header_main_container .nav-link:hover::after,
+.header_main_container .nav-link.active::after {
+    visibility: visible;
+}
+
+/* sticky change */
+.header_main_container.sticky {
+    z-index: 10;
+    color: var(--lightBlack);
+    background: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.header_main_container.navbar-expand-lg.sticky .navbar-nav .nav-link{
+    color: var(--lightBlack);
+}

@@ -1,0 +1,19 @@
+.orangeBtn {
+    color: var(--orange);
+    background-color: transparent;
+    border: 3px solid var(--orange);
+    font-size: 1rem;
+    transition: 100ms ease-out;
+    font-family: "Poppins",sans-serif;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: inherit;
+    text-decoration: none;
+    padding: 5px 15px;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.orangeBtn.btn:hover{
+    background-color: var(--orange);
+    border-color: var(--orange);
+}

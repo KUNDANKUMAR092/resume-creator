@@ -1,11 +1,24 @@
-.iam{
+.TextTypingAnimation_cont.white .iam{
+    color: var(--lightBlack);
+    font-size: 24px;
+    font-weight: 300;
+    padding-right: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+.TextTypingAnimation_cont.white .msg{
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    color: var(--orange);
+}
+.TextTypingAnimation_cont.dark .iam{
     color: white;
     font-size: 55px;
     padding: 15px;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
-.animation_text{
+.TextTypingAnimation_cont.dark .msg{
     font-size: 55px;
-    font-family: sans-serif;
+    font-family: "Open Sans", sans-serif;
     color: #03a9f4;
 }

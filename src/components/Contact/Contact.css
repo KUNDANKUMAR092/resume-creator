@@ -1,0 +1,159 @@
+.contacts {
+    min-height: 100vh;
+    display: flex;
+}
+.contacts--container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+.contacts-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+.contacts-form {
+    display: flex;
+    flex: 0.5 1;
+    width: 100%;
+}
+.contacts-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.input-container {
+    width: 100%;
+}
+.form-input, .form-message {
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+    margin-bottom: 2rem;
+    padding: 0.7rem;
+    border-radius: 20px;
+    width: 100%;
+    resize: none;
+}
+.form-input {
+    height: 50px;
+}
+.form-message {
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.submit-btn button {
+    border: none;
+    outline: none;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.submit-btn button p {
+    font-size: 16px;
+    font-family: var(--PoppinsFont);
+    margin: 0px;
+}
+.submit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.send-icon {
+    font-size: 25px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate(5px,-3px) rotate(-30deg);
+    transform: translate(5px,-3px) rotate(-30deg);
+    animation: initial;
+    position: initial;
+}
+.success-icon {
+    font-size: 28px;
+    transition: all .3s ease-in-out .8s;
+    display: none;
+    opacity: 0;
+}
+
+.contacts-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex: 0.6 1;
+    box-sizing: border-box;
+    padding-left: 7rem;
+    margin-top: 1.2rem;
+}
+.personal-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    outline: none;
+    text-decoration: none;
+}
+.personal-details p {
+    margin-left: 1.5rem;
+    font-size: 18px;
+    line-height: 110%;
+    font-weight: 500;
+    font-family: var(--primaryFont);
+    word-break: break-word;
+    color: rgb(234, 234, 234);
+    margin-bottom: 0px;
+}
+.socialmedia-icons {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 1.5rem;
+    gap: 1.5rem;
+    margin-top: 4rem;
+}

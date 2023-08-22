@@ -1,0 +1,14 @@
+.topic_heading_text {
+    font-size: 3.3rem;
+    margin-bottom: 30px;
+    font-family: var(--PoppinsFont);
+    color: var(--orange);
+}
+.topic_heading_text.right_side_text{
+    display: flex;
+    justify-content: end;
+}
+.topic_heading_text.center{
+    display: flex;
+    justify-content: center;
+}

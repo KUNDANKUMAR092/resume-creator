@@ -2,3 +2,108 @@
     font-size: 12px;
     min-width: 80px;
 }
+
+.mySkills_body{
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    /* width: 960px; */
+}
+.mySkills_body .slide_track {
+    -webkit-animation: skillsscroll 40s linear infinite;
+    animation: skillsscroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 16);
+}
+
+.mySkills_body:hover .slide_track{
+    -webkit-animation-play-state:paused;
+    -moz-animation-play-state:paused;
+    -o-animation-play-state:paused;
+    animation-play-state:paused;
+    cursor: pointer;
+}
+
+.mySkills_body .slide {
+    width: 250px;
+}
+
+
+@-webkit-keyframes skillsscroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-250px * 8));
+        transform: translateX(calc(-250px * 8));
+    }
+}
+@keyframes skillsscroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 8));
+      transform: translateX(calc(-250px * 8));
+    }
+}
+
+
+/* 
+@-webkit-keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  @keyframes scroll {
+    0% {
+      -webkit-transform: translateX(0);
+      transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(calc(-250px * 7));
+      transform: translateX(calc(-250px * 7));
+    }
+  }
+  .slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+  }
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  .slider::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+  }
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  .slider .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  .slider .slide {
+    height: 100px;
+    width: 250px;
+  } */

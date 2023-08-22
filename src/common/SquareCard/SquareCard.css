@@ -1,0 +1,139 @@
+.projectContent, .squareCard_sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.squareCard_sec{
+    box-shadow: 4px 4px 8px rgba(36,3,3,.2);
+    width: 304px;
+    height: 360px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 1.4rem 2rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: var(--pureOrange);
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: mymove;
+    border-width: 0px;
+    margin-bottom: 30px;
+    transition: background-color .2s ease-in-out;
+}
+.projectContent {
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.projectContent>h2 {
+    font-family: var(--PoppinsFont);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.525rem;
+    line-height: 110%;
+    text-align: center;
+    color: var(--lightestGrey);
+}
+.projectContent>img {
+    width: 100%;
+    height: 60%;
+    transition: opacity .7s .3s;
+}
+.project--showcaseBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.project--showcaseBtn>a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: -webkit-transform .5s .3s;
+    transition: transform .5s .3s;
+    transition: transform .5s .3s,-webkit-transform .5s .3s;
+}
+.squareCard_sec .jss17 {
+    color: var(--thinLightGrey);
+    width: 40px;
+    border: 2px solid var(--thinLightGrey);
+    height: 40px;
+    display: flex;
+    transition: all 0.2s;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+}
+.squareCard_sec .jss17:hover {
+    color: var(--orange);
+    border: 2px solid var(--black);
+    transform: scale(1.1);
+    background-color: var(--black);
+}
+.squareCard_sec .project--desc {
+    position: absolute;
+    width: 95%;
+    height: 160px;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(-110%,40%);
+    transform: translate(-110%,40%);
+    padding: 15px;
+    border-radius: 0 20px 20px 0;
+    transition: -webkit-transform .9s;
+    transition: transform .9s;
+    transition: transform .9s,-webkit-transform .9s;
+    line-height: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--PoppinsFont);
+    background: var(--black);
+    color: var(--thinLightGrey);
+}
+.squareCard_sec .project--lang {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    width: 140px;
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    grid-gap: 0.5rem;
+    gap: 0.5rem;
+    flex-direction: column;
+    border-radius: 10px 0 0 10px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    transition: -webkit-transform .5s .3s;
+    transition: transform .5s .3s;
+    transition: transform .5s .3s,-webkit-transform .5s .3s;
+    padding: 0.825rem;
+    background: var(--black);
+    color: rgba(234, 234, 234, 0.8);
+}
+
+.project--lang>span {
+    font-family: var(--PoppinsFont);
+    font-weight: 500;
+    word-break: break-word;
+    line-height: 100%;
+}
+.squareCard_sec:hover .project--desc {
+    -webkit-transform: translate(-2%,40%);
+    transform: translate(-2%,40%);
+}
+.squareCard_sec:hover .project--lang {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+.squareCard_sec:hover img {
+    opacity: 0;
+}
+.squareCard_sec:hover .project--showcaseBtn a:nth-child(2) {
+    -webkit-transform: translateX(-140px) scale(1.1)!important;
+    transform: translateX(-140px) scale(1.1)!important;
+}

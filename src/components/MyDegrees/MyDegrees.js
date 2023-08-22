@@ -1,54 +1,34 @@
 import './MyDegrees.css';
-import { Row, Col, Card} from 'react-bootstrap';
+import { Row, Col} from 'react-bootstrap';
+import TopicHeading from './../../common/TopicHeading/TopicHeading';
+import RectangularCard  from "./../../common/RectangularCard/RectangularCard";
+import educationIcon from './../../assets/img/eduImgWhite.ae822784.svg';
+import eduOrange from './../../assets/img/eduOrange.c61dcfc3.svg';
+
+
 function MyDegrees() {
     return ( 
-        <>
+        <div className='paddingTop4rem'>
             <Row>
                 <Col>
-                    <h6>My Degrees</h6>
+                    <TopicHeading headingText={'Education'} />
                 </Col>
             </Row>
             <Row>
-                <Col>
-                    <Card className='card_box_shadow'>
-                        <Card.Body>
-                            <Row>
-                                <Col className='d-flex align-items-center mb-2'>
-                                    <div className='margin_right_10 skills_text'>HTML</div> 
-                                    <div className='flex-grow-1'></div>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col className='d-flex align-items-center mb-2'>
-                                    <div className='margin_right_10 skills_text'>CSS</div> 
-                                    <div className='flex-grow-1'></div>
-                                </Col>
-                            </Row>
-                            
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className='card_box_shadow'>
-                        <Card.Body>
-                            <Row>
-                                <Col className='d-flex align-items-center mb-2'>
-                                    <div className='margin_right_10 skills_text'>HTML</div> 
-                                    <div className='flex-grow-1'></div>
-                                </Col>
-                            </Row>
-                            <Row>
-                                <Col className='d-flex align-items-center mb-2'>
-                                    <div className='margin_right_10 skills_text'>CSS</div> 
-                                    <div className='flex-grow-1'></div>
-                                </Col>
-                            </Row>
-                            
-                        </Card.Body>
-                    </Card>
+                <Col >
+                    <div className='education_body'>
+                        <div className='education_description'>
+                            <RectangularCard imgIcon={educationIcon} yearStart={'2007'} yearEnd={'2008'} cardHeading={'matriculation'} cardSubHeading={'Okhariya High School , Okhariya'} />
+                            <RectangularCard imgIcon={educationIcon} yearStart={'2007'} yearEnd={'2008'} cardHeading={'matriculation'} cardSubHeading={'Okhariya High School , Okhariya'} />
+                            <RectangularCard imgIcon={educationIcon} yearStart={'2007'} yearEnd={'2008'} cardHeading={'matriculation'} cardSubHeading={'Okhariya High School , Okhariya'} />
+                        </div>
+                        <div class="education_image">
+                            <img src={eduOrange} alt="" />
+                        </div>
+                    </div>
                 </Col>
             </Row>
-        </>
+        </div>
      );
 }
 

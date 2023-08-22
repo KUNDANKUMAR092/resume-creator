@@ -1,0 +1,141 @@
+.login_singup_main_container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_signup_box{
+    background: #fafafa;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12);
+    border-radius: 10px;
+    min-width: 600px;
+    min-height: 200px;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transition: .3s ease-in-out;
+    background-color: rgb(33, 33, 33);
+    box-shadow: rgba(245, 101, 57, 0.3) 0px 0px 30px;
+}
+
+.login_form {
+    display: flex;
+    flex-direction: column;
+    flex: 0.5 1;
+    width: 100%;
+}
+.contacts-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.form_heding{
+    margin-bottom: 10px;
+}
+.form_heding, .submit-btn{
+    display: flex;
+    justify-content: center;
+}
+.form_heding h2{
+    color: var(--orange);
+}
+.login_form .submit-btn button {
+    border: none;
+    outline: none;
+    width: 140px;
+    height: 50px;
+    border-radius: 50px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.login_form .submit-btn button p {
+    font-size: 16px;
+    font-family: var(--PoppinsFont);
+    margin: 0px;
+}
+.login_form .submit-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.login_form .send-icon {
+    font-size: 25px;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: translate(5px,-3px) rotate(-30deg);
+    transform: translate(5px,-3px) rotate(-30deg);
+    animation: initial;
+    position: initial;
+}
+.login_form .success-icon {
+    font-size: 28px;
+    transition: all .3s ease-in-out .8s;
+    display: none;
+    opacity: 0;
+}
+
+
+.condition_cont{
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+}
+.forgot_pass_text a{
+    font-size: 12px;
+    color: var(--orange);
+    text-decoration: none;
+    outline: none;
+}
+.or_sec{
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 16px;
+    color: #eaeaea;
+}
+.google_btn_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.google_btn_cont button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0px;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    border: 1px solid var(--orange);
+    padding: 9px 15px;
+}
+.google_btn_cont button img{
+    width: 30px;
+}
+.google_btn_cont button p{
+    font-size: 16px;
+    color:  var(--orange);
+    margin-bottom: 0px;
+}
+
+
+
+
+.signup_link{
+    margin-top: 1rem;
+    text-align: center;
+    color: #eaeaea;
+}
+.signup_link a{
+    color: var(--orange);
+}

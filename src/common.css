@@ -1,19 +1,56 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+:root {
+  --white: #ffffff;
+  --black: #212121;
+  --normalBlacl: #333333;
+  --lightBlack: #3E4450;
+  --transparentBlack: #b7b7b7;
+  --transParentBlackShadow: rgba(44, 51, 64, 0.8);
+  --lightGrey: #9a9da2;
+  --lightestGrey: #eaeaeacc;
+  --thinLightGrey : #eaeaea;
+  --pureOrange: #ff764d;
+  --orange: #f56539;
+  --darkOrange: #f565394d;
+  --lightOrange: #f5653980;
+  --red: #e6686a;
+  
+
+  --PoppinsFont: "Poppins",sans-serif;
+}
+@keyframes mymove {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 100%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--black);
+}
+.paddingTop4rem{
+  padding-top: 4rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.mask {
+  height: 515px;
+  background-color: var(--transParentBlackShadow);
 }
 
 
 
 /* start */
 .main_container{
-  padding-top: 56px;
+  /* padding-top: 56px; */
+}
+.about_contcat_container{
+  padding-top: 64px;
 }
 
 .row_cont{
@@ -32,3 +69,94 @@ code {
 .margin_right_10{
   margin-right: 10px;
 }
+
+
+/* common class */
+.jss17 {
+  color: var(--thinLightGrey);
+  width: 40px;
+  border: 2px solid var(--thinLightGrey);
+  height: 40px;
+  display: flex;
+  transition: all 0.2s;
+  align-items: center;
+  border-radius: 50px;
+  justify-content: center;
+}
+.jss74 {
+  color: #eaeaea;
+  transition: color 0.2s;
+  background-color: #f56539;
+}
+.jss75 {
+  color: #eaeaea;
+  width: 40px;
+  cursor: pointer;
+  height: 40px;
+  padding: 0.5rem;
+  font-size: 1.05rem;
+  transition: background-color 0.2s;
+  border-radius: 50%;
+  background-color: #212121b3;
+}
+.jss89 {
+  color: #f56539;
+  display: inline-flex;
+  padding: 0 5px;
+  font-size: 0.9rem;
+  transform: translate(25px,50%);
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  background-color: #212121;
+}
+.jss87 {
+  color: #eaeaea;
+  border: 4px solid #f56539cc;
+  transition: border 0.2s ease-in-out;
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  background-color: #212121;
+}
+
+.jss88 {
+  color: #eaeaea;
+  border: 4px solid #f56539cc;
+  transition: border 0.2s ease-in-out;
+  font-family: var(--primaryFont);
+  font-weight: 500;
+  background-color: #212121;
+}
+.jss90 {
+  color: #212121;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  font-size: 21px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #f56539;
+}
+.jss91 {
+  color: #212121;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  font-size: 23px;
+  transition: 250ms ease-in-out;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #f56539;
+}
+.jss92 {
+  color: #212121;
+  transition: 250ms ease-in-out;
+  background-color: #f56539;
+}
+
+/* common class end */
+
+/* form class */

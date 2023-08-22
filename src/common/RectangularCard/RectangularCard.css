@@ -1,0 +1,59 @@
+.rectangularCard_sec{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    height: 140px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    transition: background-color .2s ease-in-out;
+    animation-fill-mode: both;
+    animation-duration: 1000ms;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    opacity: 1;
+    animation-name: mymove;
+    background-color: var(--darkOrange);
+    transition: background-color .2s ease-in-out;
+}
+.rectangularCard_sec:hover{
+    background-color: var(--lightOrange);
+}
+
+.educard_img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background-color: var(--orange);
+}
+.educard_img>img {
+    width: 40px;
+}
+.education_details {
+    margin-left: 0.6rem;
+}
+.education_details>h6 {
+    font-family: var(--PoppinsFont);
+    font-size: .85rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--orange);
+}
+.education_details>h4, .education_details>h5 {
+    font-family: var(--PoppinsFont);
+    font-weight: 600;
+    color: var(--lightestGrey);
+    text-transform: capitalize;
+}
+.education_details>h4 {
+    font-size: 1.225rem;
+}
+.education_details>h5 {
+    font-size: 1rem;
+}

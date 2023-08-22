@@ -51,9 +51,9 @@ function TextTypingAnimation(props) {
     }, [props.texts, charIndex, textIndex, isDelete]);
   
     return (
-        <div className="TextTypingAnimation_cont">
+        <div className={`TextTypingAnimation_cont ${props.isBackgroudColor}`}>
             <span className="iam">I'm{''}</span>
-            <span className={props.className}>
+            <span className='msg'>
                 {displayedTextRef.current}
                 <span className="cursor">|</span>
             </span>

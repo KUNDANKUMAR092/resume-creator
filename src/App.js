@@ -1,15 +1,9 @@
-import Header from './common/Header/Header';
-import Home from './components/Home/Home';
+import Layout from './Layout/Layout';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-      <div className='main_container'>
-        <Home />
-      </div>
+      <Layout />
     </div>
   );
 }

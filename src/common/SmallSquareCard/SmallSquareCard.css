@@ -1,0 +1,37 @@
+
+.small_square_box {
+    background: #fafafa;
+    box-shadow: 0 10px 20px rgba(0,0,0,.12);
+    border-radius: 10px;
+    min-width: 200px;
+    min-height: 200px;
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    transition: .3s ease-in-out;
+    background-color: rgb(33, 33, 33);
+    box-shadow: rgba(245, 101, 57, 0.3) 0px 0px 30px;
+}
+
+.small_square_box>img {
+    height: 50px;
+    pointer-events: none;
+}
+
+.small_square_box h3 {
+    font-family: var(--PoppinsFont);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 1rem;
+    color: rgb(234, 234, 234);
+}
+
+.small_square_box:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+}
